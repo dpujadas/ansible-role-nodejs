@@ -1,0 +1,10 @@
+---
+- hosts: travis
+  connection: docker
+  remote_user: root
+  roles:
+    - {
+      role: ansible-role-nodejs,
+      nodejs_major_version: '5',
+      nodejs_minor_version: '9.0'
+    }

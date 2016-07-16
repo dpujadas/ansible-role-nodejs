@@ -1,0 +1,8 @@
+---
+# vars file for nodejs
+
+nodejs_repos:
+  - 'deb https://deb.nodesource.com/node_{{ nodejs_major_version }}.x {{ ansible_distribution_release }} main'
+  - 'deb-src https://deb.nodesource.com/node_{{ nodejs_major_version }}.x {{ ansible_distribution_release }} main'
+
+nodejs_version: '{{ nodejs_major_version }}.{{ nodejs_minor_version }}'

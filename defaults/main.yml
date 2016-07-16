@@ -1,0 +1,5 @@
+---
+# defaults file for nodejs
+
+nodejs_major_version: '5'
+nodejs_minor_version: ''
